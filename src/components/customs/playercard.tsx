@@ -7,7 +7,7 @@ import { Button } from '../ui/button'
 import ShowMorePlyerInfo from './showmoreplayer'
 
 const PlayerCard = (props:palyerCardprops) => {
-  
+  const details = props;
   return (
     <div className={cn('w-full',props.className)}>
       <div className='w-full max-w-full'>
@@ -31,7 +31,7 @@ const PlayerCard = (props:palyerCardprops) => {
                 </CardDescription>
                 <div className='w-full flex gap-8 p-4 '>
                     <ShowMorePlyerInfo
-                    details={...props}
+                    details={details}
                     />
                     <Button>whatsapp</Button>
                 </div>
